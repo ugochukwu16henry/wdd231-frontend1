@@ -833,27 +833,62 @@
      background-color: #555;
  }
 
- button,
- .btn {
-     background-color: #007BFF;
-     color: #fff;
-     padding: 12px 24px;
-     border-radius: 6px;
-     border: none;
-     cursor: pointer;
-     transition: all 0.3s ease;
- }
-
- button:hover,
- .btn:hover {
-     background-color: #0056b3;
-     transform: translateY(-2px);
- }
-
+ /* Mobile Menu Button - Hidden by default on desktop */
  .mobile-menu-btn {
      display: none;
-     background: rgb(11, 7, 7);
+     background: none;
      border: none;
-     font-size: 1.5rem;
+     font-size: 28px;
      cursor: pointer;
+     padding: 5px 10px;
+     color: #333;
+ }
+
+ /* Mobile styles */
+ @media (max-width: 768px) {
+
+     /* Show mobile menu button */
+     .mobile-menu-btn {
+         display: block;
+         position: absolute;
+         top: 15px;
+         right: 15px;
+         z-index: 100;
+     }
+
+     /* Hide desktop navigation on mobile */
+     .main-nav {
+         display: none;
+     }
+
+     /* When menu is active, show navigation */
+     .main-nav.active {
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         top: 60px;
+         right: 15px;
+         background-color: white;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+         gap: 15px;
+         z-index: 99;
+     }
+
+     .main-nav.active a {
+         display: block;
+         color: #333;
+         padding: 10px;
+         text-decoration: none;
+     }
+
+     .main-nav.active .theme-toggle {
+         margin-top: 10px;
+     }
+
+     /* Adjust header for mobile */
+     header {
+         position: relative;
+     }
  }

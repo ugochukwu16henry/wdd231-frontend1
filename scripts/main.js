@@ -9,16 +9,28 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Mobile menu toggle
-  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
-  const navMenu = document.querySelector("nav ul");
+// Mobile Menu Toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mainNav = document.querySelector('.main-nav');
 
-  if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener("click", function () {
-      navMenu.classList.toggle("active");
-    });
-  }
+mobileMenuBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+    
+    // Change hamburger icon to X when menu is open
+    if (mainNav.classList.contains('active')) {
+        mobileMenuBtn.textContent = '✕';
+    } else {
+        mobileMenuBtn.textContent = '☰';
+    }
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!mobileMenuBtn.contains(e.target) && !mainNav.contains(e.target)) {
+        mainNav.classList.remove('active');
+        mobileMenuBtn.textContent = '☰';
+    }
+});
 
 // Update Last Modified Date
 document.getElementById("last-modified").textContent += document.lastModified;
@@ -70,4 +82,4 @@ function updateWeather() {
 
 // Initialize
 updateWeather();
-});
+
