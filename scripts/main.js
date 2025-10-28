@@ -9,7 +9,8 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
- // Mobile menu toggle
+document.addEventListener("DOMContentLoaded", function () {
+  // Mobile menu toggle
   const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
   const navMenu = document.querySelector("nav ul");
 
@@ -69,3 +70,4 @@ function updateWeather() {
 
 // Initialize
 updateWeather();
+});
