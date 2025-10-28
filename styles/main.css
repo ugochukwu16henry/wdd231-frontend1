@@ -832,3 +832,28 @@
  .cta-button.secondary:hover {
      background-color: #555;
  }
+
+ button,
+ .btn {
+     background-color: #007BFF;
+     color: #fff;
+     padding: 12px 24px;
+     border-radius: 6px;
+     border: none;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+ button:hover,
+ .btn:hover {
+     background-color: #0056b3;
+     transform: translateY(-2px);
+ }
+
+ .mobile-menu-btn {
+     display: none;
+     background: rgb(11, 7, 7);
+     border: none;
+     font-size: 1.5rem;
+     cursor: pointer;
+ }

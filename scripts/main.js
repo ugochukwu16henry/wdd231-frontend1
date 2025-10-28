@@ -9,6 +9,16 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
+ // Mobile menu toggle
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+  const navMenu = document.querySelector("nav ul");
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+  }
+
 // Update Last Modified Date
 document.getElementById("last-modified").textContent += document.lastModified;
 
