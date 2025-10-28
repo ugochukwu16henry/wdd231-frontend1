@@ -1,16 +1,227 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Timbuktu Chamber of Commerce</title>
+    <meta name="description"
+        content="Timbuktu Chamber of Commerce — resources, events, directory and networking for local businesses." />
+    <meta name="theme-color" content="#1E3A8A" />
+
+    <!-- SEO & Social -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce" />
+    <meta property="og:description" content="Resources, events, and business directory for Timbuktu." />
+    <meta property="og:image" content="/assets/images/og-image.png" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <!--Normalize Stylesheet-->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type='text/css' media='screen' href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="Timbuktu Chamber of Commerce Logo">
+            <span>Timbuktu Chamber of Commerce</span>
+        </div>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#directory">Directory</a>
+            <a href="#join">Join</a>
+            <a href="#discover">Discover</a>
+            <button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Membership Banner -->
+    <div class="membership-banner">
+        <p>Join the Timbuktu Chamber of Commerce today and unlock exclusive benefits for your business! <a
+                href="#join">Learn more</a></p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Timbuktu Chamber of Commerce</h1>
+            <p>Connecting businesses, fostering growth, and building our community together</p>
+        </div>
+        <button>Upcoming Events</button>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <h2>Home</h2>
+
+        <!-- Content Grid -->
+        <div class="content-grid">
+            <!-- Events Section -->
+            <section class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <h3>Business Networking Mixer</h3>
+                        <p><i class="far fa-calendar"></i> October 25, 2023 | 6:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Timbuktu Conference Center</p>
+                    </div>
+                    <div class="event-item">
+                        <h3>Small Business Workshop</h3>
+                        <p><i class="far fa-calendar"></i> November 5, 2023 | 9:00 AM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Chamber Office</p>
+                    </div>
+                    <div class="event-item">
+                        <h3>Annual Gala Dinner</h3>
+                        <p><i class="far fa-calendar"></i> December 15, 2023 | 7:00 PM</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Grand Timbuktu Hotel</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Current Weather -->
+            <section class="weather-widget">
+                <h2>Current Weather</h2>
+                <div class="weather-current">
+                    <div class="weather-icon">☀️</div>
+                    <div class="weather-info">
+                        <p><strong>90°F</strong></p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 92°</p>
+                        <p>Low: 70°</p>
+                        <p>Precipitation: 10%</p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 8:00pm</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weather Forecast -->
+            <section class="weather-widget weather-forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li>Today: <strong>90°F</strong></li>
+                    <li>Wednesday: <strong>89°F</strong></li>
+                    <li>Thursday: <strong>68°F</strong></li>
+                    <li>Friday: <strong>72°F</strong></li>
+                    <li>Saturday: <strong>75°F</strong></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2>Ready to Grow Your Business?</h2>
+            <p>Join the Timbuktu Chamber of Commerce and access resources, networking opportunities, and business
+                support.</p>
+            <div class="cta-buttons">
+                <button class="cta-button">Become a Member</button>
+                <button class="cta-button secondary">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Business Cards -->
+        <section class="business-cards">
+            <!-- Business Card 1 -->
+            <article class="business-card">
+                <h3>Timbuktu Textiles</h3>
+                <p class="category">Retail & Fashion</p>
+                <div class="business-card-content">
+                    <div class="business-image">
+                        <i class="fas fa-tshirt fa-2x"></i>
+                    </div>
+                    <div class="business-details">
+                        <p><strong>EMAIL:</strong> info@timbuktutextiles.com</p>
+                        <p><strong>PHONE:</strong> 123-123-1234</p>
+                        <p><strong>URL:</strong> timbuktutextiles.com</p>
+                        <p><strong>ADDRESS:</strong> 123 Market St, Timbuktu</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Business Card 2 -->
+            <article class="business-card">
+                <h3>Sahara Cafe</h3>
+                <p class="category">Restaurant & Food</p>
+                <div class="business-card-content">
+                    <div class="business-image">
+                        <i class="fas fa-utensils fa-2x"></i>
+                    </div>
+                    <div class="business-details">
+                        <p><strong>EMAIL:</strong> contact@saharacafe.com</p>
+                        <p><strong>PHONE:</strong> 123-456-7890</p>
+                        <p><strong>URL:</strong> saharacafe.com</p>
+                        <p><strong>ADDRESS:</strong> 456 Oasis Ave, Timbuktu</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Business Card 3 -->
+            <article class="business-card">
+                <h3>Desert Tours</h3>
+                <p class="category">Tourism & Travel</p>
+                <div class="business-card-content">
+                    <div class="business-image">
+                        <i class="fas fa-camera fa-2x"></i>
+                    </div>
+                    <div class="business-details">
+                        <p><strong>EMAIL:</strong> book@deserttours.com</p>
+                        <p><strong>PHONE:</strong> 555-555-1234</p>
+                        <p><strong>URL:</strong> deserttours.com</p>
+                        <p><strong>ADDRESS:</strong> 789 Dune Rd, Timbuktu</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>123 Main St</p>
+            <p>PO Box 123</p>
+            <p>Timbuktu, Mali 99999</p>
+            <p>Mali</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@timbuktuchamber.com</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <div class="footer-projects">
+            <h4>WDD231 Class Project</h4>
+            <p>Chamber of Commerce Site</p>
+            <p>Henry Ugochukwu</p>
+            <p id="last-modified">Last Modification: </p>
+        </div>
+    </footer>
 </body>
+
 </html>
