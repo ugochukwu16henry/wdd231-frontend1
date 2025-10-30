@@ -1,0 +1,99 @@
+/* Larger Screen Styles - Tablets and Desktop */
+
+@media (min-width: 768px) {
+
+    /* Hide hamburger on larger screens */
+    .hamburger {
+        display: none;
+    }
+
+    /* Horizontal navigation */
+    .nav-menu {
+        max-height: none;
+        overflow: visible;
+        background-color: var(--primary-color);
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .nav-menu li {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu li:last-child {
+        border-right: none;
+    }
+
+    .nav-menu a {
+        padding: 1rem 2rem;
+    }
+
+    /* Course Cards - 2 columns */
+    .course-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Photo Section */
+    .photo-placeholder {
+        max-width: 600px;
+        margin: 1rem auto;
+        height: 400px;
+    }
+
+    /* Main content sections side by side */
+    main {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Course Cards - 3 columns on larger screens */
+    .course-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Two column layout for About and Photo sections */
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .filter-buttons {
+        justify-content: center;
+    }
+
+    .filter-btn {
+        flex: 0 1 auto;
+        min-width: 120px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /* Maximum width container */
+    main {
+        padding: 2.5rem;
+    }
+
+    /* Course Cards - 4 columns on very large screens */
+    .course-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
