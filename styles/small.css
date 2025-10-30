@@ -160,10 +160,37 @@ section {
     background-color: #fff;
 }
 
-.about-section p {
+.about-content {
     padding: 1rem 1.5rem;
+}
+
+.about-content p {
+    margin-bottom: 1rem;
     line-height: 1.6;
     font-size: 0.95rem;
+}
+
+.about-content h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.about-content ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+}
+
+.about-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.about-content strong {
+    color: var(--primary-color);
 }
 
 /* Photo Section */

@@ -99,8 +99,13 @@
         padding: 1.5rem 2rem;
     }
 
-    .about-section p {
+    /* About section content */
+    .about-content {
         padding: 1.5rem 2rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.2rem;
     }
 
     .filter-buttons {
