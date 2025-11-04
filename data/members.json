@@ -6,7 +6,7 @@
       "address": "123 Main St, Anytown",
       "phone": "555-1234",
       "website": "https://www.acmewidgets.com",
-      "imagefile": "acme_logo.JPG",
+      "imagefile": "acme_logo.jpg",
       "membershiplevel": 3,
       "otherinfo": "Established 1980"
     },
@@ -15,7 +15,7 @@
       "address": "45 Oak Ave, Anytown",
       "phone": "555-5678",
       "website": "https://www.betaconsulting.net",
-      "imagefile": "beta_icon.PNG",
+      "imagefile": "beta_icon.png",
       "membershiplevel": 2,
       "otherinfo": "Specializing in tech solutions"
     },
@@ -24,7 +24,7 @@
       "address": "789 Plaza Blvd, Anytown",
       "phone": "555-9012",
       "website": "https://www.centralmarket.com",
-      "imagefile": "central_market.PNG",
+      "imagefile": "central_market.png",
       "membershiplevel": 1,
       "otherinfo": "Local produce and goods"
     },
@@ -33,7 +33,7 @@
       "address": "100 Innovation Way, Anytown",
       "phone": "555-3456",
       "website": "https://www.deltatech.org",
-      "imagefile": "delta_tech.PNG",
+      "imagefile": "delta_tech.png",
       "membershiplevel": 3,
       "otherinfo": "Gold level member since 2018"
     },
@@ -42,7 +42,7 @@
       "address": "500 Fitness Rd, Anytown",
       "phone": "555-7890",
       "website": "https://www.echowellness.com",
-      "imagefile": "echo_studio.PNG",
+      "imagefile": "echo_studio.png",
       "membershiplevel": 2,
       "otherinfo": "Offering yoga and massage"
     },
@@ -51,7 +51,7 @@
       "address": "22 Arts Lane, Anytown",
       "phone": "555-2468",
       "website": "https://www.fusiongraphics.biz",
-      "imagefile": "fusion_design.JPG",
+      "imagefile": "fusion_design.jpg",
       "membershiplevel": 1,
       "otherinfo": "Award-winning design firm"
     },
@@ -60,7 +60,7 @@
       "address": "33 Money Dr, Anytown",
       "phone": "555-1357",
       "website": "https://www.gammafinance.com",
-      "imagefile": "gamma_corp.PNG",
+      "imagefile": "gamma_corp.png",
       "membershiplevel": 3,
       "otherinfo": "Provides investment advice"
     }
