@@ -48,7 +48,7 @@ function displayMembers(companies, viewType) {
     website.href = company.website;
     website.target = "_blank"; // Open in new tab
 
-    image.setAttribute("src", `./images/${company.imagefile}`); // Assuming images are in an 'images' folder
+    image.setAttribute("src", `../images/${company.imagefile}`); // Assuming images are in an 'images' folder
     image.setAttribute("alt", `Logo of ${company.name}`);
     image.setAttribute("loading", "lazy");
 
