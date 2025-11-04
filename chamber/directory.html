@@ -28,7 +28,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type='text/css' media='screen' href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css"'>
 
     <!-- Favicon and Touch Icons -->
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
@@ -38,11 +38,9 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- Main stylesheet -->
-    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/directory.css">
 
 </head>
-
-<body>
 
 
     <!-- Header -->
@@ -60,6 +58,22 @@
         </nav>
         <button class="mobile-menu-btn" aria-label="Toggle mobile menu">☰</button>
     </header>
+
+<body>
+    <main>
+        <div class="menu">
+            <button id="grid-view-btn">
+                <span role="img" aria-label="Grid View">⏹️</span> Grid
+            </button>
+            <button id="list-view-btn">
+                <span role="img" aria-label="List View">📄</span> List
+            </button>
+        </div>
+        
+        <div id="members-container" class="grid">
+        </div>
+    
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -95,7 +109,7 @@
             <p id="last-modified">Last Modification: </p>
         </div>
     </footer>
-    <script src="scripts/chamber.js"></script>
+    <script src="scripts/directory.js"></script>
     </body>
     
     </html>
