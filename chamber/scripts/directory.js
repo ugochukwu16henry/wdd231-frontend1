@@ -1,6 +1,7 @@
 // js/directory.js
 
-const dataURL = "chamber/data/members.json";
+const dataURL =
+  "https://ugochukwu16henry.github.io/wdd231-frontend1/chamber/data/members.JSON";
 const membersContainer = document.querySelector("#members-container");
 // Select the buttons for view toggling (assuming you have them in your HTML)
 const gridbutton = document.querySelector("#grid-view-btn");
