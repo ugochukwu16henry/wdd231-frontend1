@@ -1,6 +1,6 @@
 // js/directory.js
 
-const dataURL = "data/members.json";
+const dataURL = "../data/members.json";
 const membersContainer = document.querySelector("#members-container");
 // Select the buttons for view toggling (assuming you have them in your HTML)
 const gridbutton = document.querySelector("#grid-view-btn");
