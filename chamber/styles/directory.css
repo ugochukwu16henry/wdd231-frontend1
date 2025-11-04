@@ -72,10 +72,71 @@
      border-radius: 50%;
  }
 
- .main-nav {
-     display: flex;
+ /* directory.css or your main stylesheet */
+
+ /* --- Universal Responsive Design --- */
+ /* Your navigation styling must ensure no horizontal scroll on small screens (320px+) */
+ /* Example: using a hamburger menu icon that expands vertically */
+
+ /* --- Grid View (Default) --- */
+ #members-container.grid {
+     display: grid;
+     /* Responsive grid: minmax ensures cards adjust based on screen size */
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 20px;
+     padding: 10px;
+ }
+
+ #members-container.grid .member-card {
+     border: 1px solid #ccc;
+     padding: 15px;
+     text-align: center;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ #members-container.grid .member-card img {
+     /* Limit size and add space for grid view */
+     max-width: 150px;
+     margin-bottom: 10px;
+ }
+
+
+ /* --- List View --- */
+ #members-container.list {
+     display: flex;
+     /* or grid with one column */
+     flex-direction: column;
+     padding: 10px;
+ }
+
+ #members-container.list .member-card {
+     display: grid;
+     /* Define columns for list view: Name, Address, Phone, Website (optional Image) */
+     grid-template-columns: 200px 1fr 120px 150px 100px;
+     gap: 10px;
+     padding: 10px;
+     border-bottom: 1px solid #eee;
      align-items: center;
+     /* Vertically align content */
+     text-align: left;
+ }
+
+ #members-container.list .member-card img {
+     /* Hide image or make it small/circular for list view */
+     display: none;
+ }
+
+ #members-container.list .member-card h3 {
+     font-size: 1.1em;
+     font-weight: bold;
+ }
+
+ /* Ensure list view remains responsive on small screens */
+ @media (max-width: 600px) {
+     #members-container.list .member-card {
+         /* Stack elements vertically on small screens */
+         grid-template-columns: 1fr;
+     }
  }
 
  .main-nav a {
@@ -89,7 +150,7 @@
  .main-nav a:hover {
      color: #2e7d32;
  }
-
+ 
  .theme-toggle {
      background: none;
      border: none;
@@ -894,69 +955,4 @@
  }
 
 
- /* directory.css or your main stylesheet */
-
- /* --- Universal Responsive Design --- */
- /* Your navigation styling must ensure no horizontal scroll on small screens (320px+) */
- /* Example: using a hamburger menu icon that expands vertically */
-
- /* --- Grid View (Default) --- */
- #members-container.grid {
-     display: grid;
-     /* Responsive grid: minmax ensures cards adjust based on screen size */
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap: 20px;
-     padding: 10px;
- }
-
- #members-container.grid .member-card {
-     border: 1px solid #ccc;
-     padding: 15px;
-     text-align: center;
-     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
- }
-
- #members-container.grid .member-card img {
-     /* Limit size and add space for grid view */
-     max-width: 150px;
-     margin-bottom: 10px;
- }
-
-
- /* --- List View --- */
- #members-container.list {
-     display: flex;
-     /* or grid with one column */
-     flex-direction: column;
-     padding: 10px;
- }
-
- #members-container.list .member-card {
-     display: grid;
-     /* Define columns for list view: Name, Address, Phone, Website (optional Image) */
-     grid-template-columns: 200px 1fr 120px 150px 100px;
-     gap: 10px;
-     padding: 10px;
-     border-bottom: 1px solid #eee;
-     align-items: center;
-     /* Vertically align content */
-     text-align: left;
- }
-
- #members-container.list .member-card img {
-     /* Hide image or make it small/circular for list view */
-     display: none;
- }
-
- #members-container.list .member-card h3 {
-     font-size: 1.1em;
-     font-weight: bold;
- }
-
- /* Ensure list view remains responsive on small screens */
- @media (max-width: 600px) {
-     #members-container.list .member-card {
-         /* Stack elements vertically on small screens */
-         grid-template-columns: 1fr;
-     }
- }
+ 
