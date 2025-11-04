@@ -52,13 +52,7 @@ function displayMembers(companies, viewType) {
     image.setAttribute("alt", `Logo of ${company.name}`);
     image.setAttribute("loading", "lazy");
 
-    // Display membership level text
-    let levelText = "";
-    if (company.membershiplevel === 3) levelText = "Gold Member";
-    else if (company.membershiplevel === 2) levelText = "Silver Member";
-    else levelText = "Basic Member";
-    membership.textContent = levelText;
-    membership.classList.add(`level-${company.membershiplevel}`);
+    
 
     // Append elements to the card
     memberCard.appendChild(name);
