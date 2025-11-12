@@ -1,18 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title> UYO Chamber of Commerce</title>
+    <title>UYO Chamber of Commerce</title>
     <meta name="description"
-        content=" Uyo Chamber of Commerce — resources, events, directory and networking for local businesses." />
+        content="Uyo Chamber of Commerce — resources, events, directory and networking for local businesses." />
     <meta name="theme-color" content="#1E3A8A" />
 
     <!-- SEO & Social -->
     <meta property="og:title" content="Uyo Chamber of Commerce" />
-    <meta property="og:description" content="Resources, events, and business directory for Timbuktu." />
+    <meta property="og:description" content="Resources, events, and business directory for Uyo." />
     <meta property="og:image" content="/assets/images/og-image.png" />
 
     <!-- Google Fonts -->
@@ -21,33 +20,28 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
+
     <!--Normalize Stylesheet-->
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type='text/css' media='screen' href="styles/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles/chamber.css">
+
     <!-- Favicon and Touch Icons -->
     <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
     <link rel="shortcut icon" href="favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    
-    <!-- Main stylesheet -->
-    <link rel="stylesheet" href="styles/chamber.css">
-    
 </head>
 
 <body>
-    
-
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/myrealogo1.jpg" alt=" Uyo Chamber of Commerce Logo">
-            <span> UYO Chamber of Commerce</span>
+            <img src="images/myrealogo1.jpg" alt="Uyo Chamber of Commerce Logo">
+            <span>UYO Chamber of Commerce</span>
         </div>
         <nav class="main-nav">
             <a href="#home">Home</a>
@@ -61,8 +55,8 @@
 
     <!-- Membership Banner -->
     <div class="membership-banner">
-        <p>Join the UYO Chamber of Commerce today and unlock exclusive benefits for your business! <a
-                href="#join">Learn more</a></p>
+        <p>Join the UYO Chamber of Commerce today and unlock exclusive benefits for your business! <a href="#join">Learn
+                more</a></p>
     </div>
 
     <!-- Hero Section -->
@@ -106,28 +100,20 @@
             <section class="weather-widget">
                 <h2>Current Weather</h2>
                 <div class="weather-current">
-                    <div class="weather-icon">☀️</div>
+                    <div class="weather-icon">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
                     <div class="weather-info">
-                        <p><strong>90°F</strong></p>
-                        <p>Partly Cloudy</p>
-                        <p>High: 92°</p>
-                        <p>Low: 70°</p>
-                        <p>Precipitation: 10%</p>
-                        <p>Sunrise: 7:30am</p>
-                        <p>Sunset: 8:00pm</p>
+                        <p>Loading weather data...</p>
                     </div>
                 </div>
             </section>
 
             <!-- Weather Forecast -->
             <section class="weather-widget weather-forecast">
-                <h2>Weather Forecast</h2>
+                <h2>3-Day Forecast</h2>
                 <ul>
-                    <li>Today: <strong>90°F</strong></li>
-                    <li>Wednesday: <strong>89°F</strong></li>
-                    <li>Thursday: <strong>68°F</strong></li>
-                    <li>Friday: <strong>72°F</strong></li>
-                    <li>Saturday: <strong>75°F</strong></li>
+                    <li>Loading forecast...</li>
                 </ul>
             </section>
         </div>
@@ -143,55 +129,18 @@
             </div>
         </section>
 
-        <!-- Business Cards -->
+        <!-- Business Spotlights (Will be dynamically populated) -->
         <section class="business-cards">
-            <!-- Business Card 1 -->
+            <!-- Loading placeholder -->
             <article class="business-card">
-                <h3>UYO Textiles</h3>
-                <p class="category">Retail & Fashion</p>
+                <h3>Loading Spotlights...</h3>
+                <p class="category">Please wait</p>
                 <div class="business-card-content">
                     <div class="business-image">
-                        <i class="fas fa-tshirt fa-2x"></i>
+                        <i class="fas fa-spinner fa-spin fa-2x"></i>
                     </div>
                     <div class="business-details">
-                        <p><strong>EMAIL:</strong> info@UYOtextiles.com</p>
-                        <p><strong>PHONE:</strong> 123-123-1234</p>
-                        <p><strong>URL:</strong> UYOtextiles.com</p>
-                        <p><strong>ADDRESS:</strong> 123 Market St, Timbuktu</p>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Business Card 2 -->
-            <article class="business-card">
-                <h3>Sahara Cafe</h3>
-                <p class="category">Restaurant & Food</p>
-                <div class="business-card-content">
-                    <div class="business-image">
-                        <i class="fas fa-utensils fa-2x"></i>
-                    </div>
-                    <div class="business-details">
-                        <p><strong>EMAIL:</strong> contact@saharacafe.com</p>
-                        <p><strong>PHONE:</strong> 123-456-7890</p>
-                        <p><strong>URL:</strong> saharacafe.com</p>
-                        <p><strong>ADDRESS:</strong> 456 Oasis Ave, UYO</p>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Business Card 3 -->
-            <article class="business-card">
-                <h3>Desert Tours</h3>
-                <p class="category">Tourism & Travel</p>
-                <div class="business-card-content">
-                    <div class="business-image">
-                        <i class="fas fa-camera fa-2x"></i>
-                    </div>
-                    <div class="business-details">
-                        <p><strong>EMAIL:</strong> book@deserttours.com</p>
-                        <p><strong>PHONE:</strong> 555-555-1234</p>
-                        <p><strong>URL:</strong> deserttours.com</p>
-                        <p><strong>ADDRESS:</strong> 789 Dune Rd, UYO</p>
+                        <p>Loading company data...</p>
                     </div>
                 </div>
             </article>
@@ -201,11 +150,11 @@
     <!-- Footer -->
     <footer>
         <div class="footer-info">
-            <h3> UYO Chamber of Commerce</h3>
+            <h3>UYO Chamber of Commerce</h3>
             <p>123 Main St</p>
             <p>PO Box 123</p>
-            <p>UYO, Mali 99999</p>
-            <p>Mali</p>
+            <p>UYO, Akwa Ibom 99999</p>
+            <p>Nigeria</p>
             <p>Phone: +2349015718484</p>
             <p>Email: ugochukwuhenry16@gmail.com</p>
         </div>
@@ -227,11 +176,12 @@
 
         <div class="footer-projects">
             <h4>WDD231 Class Project</h4>
-            <p>UYO of Commerce Site</p>
+            <p>UYO Chamber of Commerce Site</p>
             <p>Henry Ugochukwu</p>
             <p id="last-modified">Last Modification: </p>
         </div>
     </footer>
+
     <script src="scripts/chamber.js"></script>
 </body>
 
