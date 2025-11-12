@@ -40,6 +40,46 @@ if (mobileMenuBtn && mainNav) {
   });
 }
 
+// Hero Slideshow
+let currentSlide = 0;
+const slides = document.querySelectorAll(".hero-slide");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+  // Remove active class from all slides and dots
+  slides.forEach((slide) => slide.classList.remove("active"));
+  dots.forEach((dot) => dot.classList.remove("active"));
+
+  // Add active class to current slide and dot
+  slides[index].classList.add("active");
+  dots[index].classList.add("active");
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-advance slides every 5 seconds
+let slideInterval = setInterval(nextSlide, 5000);
+
+// Dot navigation
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentSlide = index;
+    showSlide(currentSlide);
+
+    // Reset the interval when user manually changes slide
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide, 5000);
+  });
+});
+
+// Initialize first slide
+if (slides.length > 0) {
+  showSlide(0);
+}
+
 // Fetch Weather Data from OpenWeatherMap API (Free Tier - 2.5 API)
 async function fetchWeatherData() {
   try {

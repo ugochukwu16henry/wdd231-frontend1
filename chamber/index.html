@@ -60,12 +60,30 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
+        <div class="hero-slides">
+            <div class="hero-slide active" style="background-image: url('images/hero1.jpg');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/hero2.jpg');">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-slide" style="background-image: url('images/hero3.jpg');">
+                <div class="hero-overlay"></div>
+            </div>
+        </div>
         <div class="hero-content">
             <h1>Welcome to UYO Chamber of Commerce</h1>
             <p>Connecting businesses, fostering growth, and building our community together</p>
         </div>
         <button>Upcoming Events</button>
+
+        <!-- Navigation Dots -->
+        <div class="hero-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
     </section>
 
     <!-- Main Content -->
