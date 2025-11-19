@@ -69,6 +69,44 @@ const courses = [
   },
 ];
 
+// Function to display course details in modal
+function displayCourseDetails(course) {
+  const courseDetails = document.getElementById("course-details");
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    <p><strong>Status</strong>: ${
+      course.completed ? "Completed" : "In Progress"
+    }</p>
+  `;
+  courseDetails.showModal();
+
+  // Add event listener to close button
+  const closeModal = document.getElementById("closeModal");
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+
+  // Close modal when clicking outside
+  courseDetails.addEventListener("click", (e) => {
+    const dialogDimensions = courseDetails.getBoundingClientRect();
+    if (
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ) {
+      courseDetails.close();
+    }
+  });
+}
+
 // Function to display courses
 function displayCourses(filteredCourses) {
   const courseCardsContainer = document.getElementById("course-cards");
@@ -77,7 +115,20 @@ function displayCourses(filteredCourses) {
   filteredCourses.forEach((course) => {
     const courseCard = document.createElement("div");
     courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
-    courseCard.textContent = `${course.subject} ${course.number}`;
+    courseCard.innerHTML = `
+      <h3>${course.subject} ${course.number}</h3>
+      <p>${course.title}</p>
+      <p><strong>Credits:</strong> ${course.credits}</p>
+      <p class="status">${
+        course.completed ? "✓ Completed" : "○ In Progress"
+      }</p>
+    `;
+
+    // Add click event listener to show course details
+    courseCard.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
+
     courseCardsContainer.appendChild(courseCard);
   });
 
